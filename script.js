@@ -2,7 +2,6 @@
     const container = document.querySelector("#container");
     const resetBtn = document.querySelector(".reset");
     
-    
     let width = container.offsetWidth;
     let height = container.offsetHeight;
     console.log(width, height);
@@ -20,20 +19,15 @@
 
         grid.style.width = width/p + "px";
         grid.style.height = height/p + "px";
-        }
-    }
-}
-
-    
-
-        
+        };
+    };
+};
             resetBtn.addEventListener("click", function(){
                 while(container.firstChild){
                 container.removeChild(container.firstChild);
-                }
+                };
                 createGrid();
             });
-
 
             createGrid();
         
